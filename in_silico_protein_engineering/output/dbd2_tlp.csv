@@ -1,0 +1,17 @@
+"Disulfide by Design",2.13
+"Input File","model_tlp.pdb"
+"Input File Model",1
+"Number of complete residues",319
+"Optimum Chi3 angle: +97/-87 with Tolerance",5.00
+"Optimum Ca-Cb-S angle: 114.60 with Tolerance",4.00
+"Check for INTER-chain disulfides",True
+"Check for INTRA-chain disulfides",True
+
+"Res1 Chain","Res1 Seq #","Res1 AA","Res2 Chain","Res2 Seq #","Res2 AA","Chi3","Energy","Sum B-Factors"
+"A",21,"ASN","A",35,"ASP",-82.12,1.98,1.84
+"A",79,"TYR","A",143,"VAL",-86.94,3.19,1.89
+"A",116,"ALA","A",136,"PHE",100.34,4.69,1.87
+"A",169,"GLU","A",237,"SER",-90.17,2.25,1.91
+"A",190,"GLU","A",204,"ALA",-85.85,2.78,1.88
+"A",192,"GLY","A",205,"LEU",93.38,2.00,1.89
+"A",272,"ARG","A",294,"ALA",-90.55,2.71,1.84
