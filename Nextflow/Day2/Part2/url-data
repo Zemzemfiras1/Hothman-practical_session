@@ -1,0 +1,6 @@
+mkdir data
+cd data 
+wget ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR274/093/SRR27482193/SRR27482193_1.fastq.gz
+wget ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR274/093/SRR27482193/SRR27482193_2.fastq.gz
+
+cd ..
