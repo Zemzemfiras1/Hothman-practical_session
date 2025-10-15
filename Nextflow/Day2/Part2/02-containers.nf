@@ -8,11 +8,11 @@ reads_ch = Channel
 process checkqc {
     errorStrategy 'retry'
     maxRetries 3
-    cpus 11
+    cpus 2
     publishDir "${params.outdir}/QC-Reports/", mode: 'copy'
     conda "bioconda::fastqc=0.11.9"
     container "${ workflow.containerEngine == 'singularity' ?
-                "docker://staphb/fastqc:0.12.f1"  :  // .. check me .. 
+                "docker://staphb/fastqc:0.12.1"  :  // .. check me ..  
                 "staphb/fastqc:0.12.1" }"
 
     input:

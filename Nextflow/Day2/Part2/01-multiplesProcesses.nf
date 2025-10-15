@@ -1,4 +1,4 @@
-params.reads = "./samples.csv"
+params.reads = "../Part1/samples.csv"
 params.outdir = "./outdir"
 //params.cpus = 16
 
