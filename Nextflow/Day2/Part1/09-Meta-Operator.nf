@@ -1,5 +1,5 @@
 // Define input parameters
-params.reads  = "./snippet-level2/samples.csv"  // Path to the CSV file containing sample info
+params.reads  = "./samples.csv"  // Path to the CSV file containing sample info
 params.outdir = "./outdir"                     // Path to the output directory
 
 
@@ -52,4 +52,5 @@ Channel.fromPath(params.reads)
         [ metadata, files ]
     }
     .set { metaCh }
-metaCh.view
+
+metaCh.view()
