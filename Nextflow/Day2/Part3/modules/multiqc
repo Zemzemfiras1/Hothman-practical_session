@@ -1,0 +1,22 @@
+process multiqc {
+    tag "Gathering Multiqc FOR RAW READS"
+    publishDir "${params.outdir}/QualityControl/RAW/multiqc/" ,  mode:'copy'
+
+    conda "bioconda::multiqc=1.27"
+
+    container "${ workflow.containerEngine == 'singularity' ? 
+                "https://community-cr-prod.seqera.io/docker/registry/v2/blobs/sha256/48/4817a8a888dac348852d040c9ae14869bacb628cb3d7f91400e68eed2a9fd701/data"          : 
+                "multiqc/multiqc:latest"    }"
+   
+
+    input:
+        path (fastqc)
+            
+    output:
+        path "{multiqc_data,multiqc_report.html}"
+           
+    script:
+    """
+    multiqc . --ai
+    """
+}
